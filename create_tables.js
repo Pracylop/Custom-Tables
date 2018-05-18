@@ -360,18 +360,5 @@ function setChangeOptionsDisplay(){
     changeOptionsDisplay(document.getElementsByName('column_data_type')[0]);
 }
 
-//change options display
-function changeOptionsDisplay(elem){
-    elem.addEventListener('change', function(){
-        var nextDiv = this.parentNode.nextElementSibling;
-        if(this.value == 'select_one' || this.value == 'select_many'){
-            if(nextDiv.style.display == 'none'){
-                nextDiv.style.display = 'block';
-            } 
-        }
-        else{
-            nextDiv.style.display = 'none';
-        }
-    });
-}
+
 
